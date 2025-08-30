@@ -1,3 +1,4 @@
+// eslint.config.js
 import js from '@eslint/js'
 import globals from 'globals'
 import react from 'eslint-plugin-react'
@@ -17,7 +18,7 @@ export default [
         sourceType: 'module',
       },
     },
-    settings: { react: { version: '18.3' } },
+    settings: { react: { version: 'detect' } }, // auto-detect version
     plugins: {
       react,
       'react-hooks': reactHooks,
